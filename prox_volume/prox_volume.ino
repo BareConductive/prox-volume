@@ -101,8 +101,8 @@ void setup(){
 
   // slow down some of the MPR121 baseline filtering to avoid 
   // filtering out slow hand movements
-  MPR121.setRegister(NHDF, 0x01); //noise half delta (falling)
-  MPR121.setRegister(FDLF, 0x3F); //filter delay limit (falling)   
+  MPR121.setRegister(MPR121_NHDF, 0x01); //noise half delta (falling)
+  MPR121.setRegister(MPR121_FDLF, 0x3F); //filter delay limit (falling)   
    
 }
 
